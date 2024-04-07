@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.3 P. Dispersión (variables discretas) | La estadística de la violencia de género </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="José Navarro Sánchez y Pedro J. Ramón Torregrosa" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">La estadística de la violencia de género</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">1. La Estadística de la violencia de género</a></li>
+   <li><a href="1_un_problema_global.html" class="no-ch">1. Un problema global</a></li>
+   <li><a href="2_golpes_que_duelen_a_todos.html" class="no-ch">2. Golpes que duelen a todos</a></li>
+   <li><a href="3_estadstica_qu_es_la_estadstica.html" class="no-ch">3. ¿Estadística? ¿Qué es la estadística?</a></li>
+   <li><a href="4_nos_organizamos.html" class="daddy">4. Nos organizamos</a>
+   <ul class="other-section">
+      <li><a href="41_acumulando_frecuencias.html" class="no-ch">4.1 Acumulando frecuencias</a></li>
+      <li><a href="42_acumulando_en_continuo.html" class="no-ch">4.2 Acumulando en continuo</a></li>
+   </ul>
+   </li>
+   <li><a href="5_una_imagen_vale_ms_que_mil_palabras.html" class="daddy">5. Una imagen vale más que mil palabras</a>
+   <ul class="other-section">
+      <li><a href="51_mucho_ms_que_barras_y_sectores.html" class="no-ch">5.1 Mucho más que barras y sectores</a></li>
+      <li><a href="52_de_lo_discreto_a_lo_continuo.html" class="no-ch">5.2 De lo discreto a lo continuo</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_parametrizando.html" class="current-page-parent daddy">6. Parametrizando</a>
+   <ul>
+      <li><a href="61_p_centralizacin_variables_discretas.html" class="no-ch">6.1 P. Centralización (variables discretas)</a></li>
+      <li><a href="62_p_centralizacin_variable_continua.html" class="no-ch">6.2 P. Centralización (Variable continua)</a></li>
+      <li id="active"><a href="63_p_dispersin_variables_discretas.html" class="active no-ch">6.3 P. Dispersión (variables discretas)</a></li>
+   </ul>
+   </li>
+   <li><a href="7_la_estadstica_de_la_violencia_de_gnero.html" class="daddy">7. La estadística de la violencia de género</a>
+   <ul class="other-section">
+      <li><a href="71_vctimas_mortales.html" class="no-ch">7.1 Víctimas mortales</a></li>
+      <li><a href="72_menores_asesinados.html" class="no-ch">7.2 Menores asesinados</a></li>
+      <li><a href="73_denuncias_y_rdenes_de_proteccin.html" class="no-ch">7.3 Denuncias y órdenes de protección</a></li>
+      <li><a href="74_un_telfono_para_luchar_016.html" class="no-ch">7.4 Un teléfono para luchar (016)</a></li>
+   </ul>
+   </li>
+   <li><a href="8_nos_concienciamos.html" class="daddy">8. ¿Nos concienciamos?</a>
+   <ul class="other-section">
+      <li><a href="81_compartir_enriquece.html" class="no-ch">8.1 Compartir enriquece</a></li>
+      <li><a href="82_cmo_te_ha_ido.html" class="no-ch">8.2 ¿Cómo te ha ido?</a></li>
+   </ul>
+   </li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="62_p_centralizacin_variable_continua.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_la_estadstica_de_la_violencia_de_gnero.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.3 P. Dispersión (variables discretas)</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_edia" id="id62">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Dispersión</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta62_128_2" class="block iDevice_content">
+<div class="exe-text"><figure class="exe-figure exe-image float-right license-CC0" style="width: 300px;"><img src="dispersion.jpg" alt="" title="Dispersión" width="300" height="168" />
+<figcaption class="figcaption"><a href="https://pxhere.com/es/photo/614221" target="_blank" class="title" rel="noopener"><em>Dispersión </em></a> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Ya hemos comentado que uno de los parámetros estadísticos fundamentales es la media. Se utiliza en multitud de ocasiones: muchos elementos se fijan en función de los valores medios que se realizan en estudios y todo parece depender de ella. Por eso no es de extrañar que los parámetros que vamos a ver en esta sección estén todos pendientes de la media. Así por ejemplo, si estamos analizando la edad de las víctimas mortales menores de edad relacionadas con la violencia de género, además de ser interesante conocer la media, es importante saber si las muertes se concentran cerca de esa media o si están más dispersas.<br />Se llaman parámetros de dispersión a una serie de valores que indican lo concentrados o separados están los datos entre sí y respecto a la media.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_bulb" id="id63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Rango ó recorrido</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta63_129_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Ejercicio resuelto</h2>
+<p>En la siguiente tabla se muestran el número de mujeres atendidas en casas de acogida en las 20 ciudades más pobladas de España.</p>
+<p>Calcula el rango ó recorrido de la distribución.</p>
+<table border="1" style="width: 35.1383%; margin-left: auto; margin-right: auto; height: 148px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 18.1261%; background-color: #dedce0; height: 58px;"><strong>Nº mujeres en casas de acogida (x<sub>i</sub>)</strong></td>
+<td style="width: 17.0132%; background-color: #dedce0; height: 58px;"><strong>Nº de ciudades (f<sub>i</sub>)</strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">10</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">1</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">12</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">4</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">15</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">20</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">7</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">25</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Solución</h2>
+<p>El mayor número de mujeres atendidas en cas de acogida es 25, mientras que el menor número de mujeres atendidas es de 10.</p>
+<p>Por tanto, el rango o recorrido es 25-10=15.</p>
+</div>
+<p><br />Se llama recorrido o amplitud del rango a la diferencia entre el valor más pequeño y el más grande que se ha recogido. Nos da una primera idea de si los datos están agrupados o están muy separados, al menos en lo que respecta a los valores menores y mayores.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_bulb" id="id64">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Varianza y desviación típica en variables discretas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta64_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Se define la desviación típica  a la raíz cuadrada de la media de los cuadrados de las diferencias de las medidas obtenidas con la media de los datos. Se representa mediante la letra griega σ (sigma minúscula). Dicho valor se puede obtener mediante cualquiera de las siguientes expresiones:</p>
+<p><img src="desviacion_tipica.gif" alt="" width="168" height="59" />          <img src="desviacion_tipica_2.gif" alt="" width="160" height="59" /></p>
+<p>La desviación típica nos da información sobre cómo se desvían los datos respecto a la media, de forma que cuanto mayor sea más alejados están los datos de ella.</p>
+<p>Al cuadrado de la desviación típica se le llama varianza, varianza =   <img alt="" src="eXe_LaTeX_math_3.gif" width="24" height="15" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /> , que es otro parámetro de dispersión que también se suele utilizar en estadística.</p>
+<div class="exe-fx exe-tabs">
+<h2>Ejercicio resuelto</h2>
+<p>En esta tabla tienes los datos relativos al número de mujeres atendidas en centros de acogida en las 20 ciudades más pobladas de España. Calcula la desviación típica de esta distribución.</p>
+<table border="1" style="width: 35.1383%; margin-left: auto; margin-right: auto; height: 148px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 18.1261%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Nº mujeres en centros de acogida (x<sub>i</sub>)</strong></td>
+<td style="width: 17.0132%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Nº de ciudades (f<sub>i</sub>)</strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">10</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">1</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">12</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">4</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">15</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">20</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">7</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">25</td>
+<td style="width: 17.0132%; height: 18px; text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Solución</h2>
+<p>Añadimos las columnas necesarias para calcular tanto la media aritmética como la desviación típica.</p>
+<p></p>
+<table border="1" style="width: 47.8964%; margin-left: auto; margin-right: auto; height: 148px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 18.1261%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Nº mujeres en centros de acogida (x<sub>i</sub>)</strong></td>
+<td style="width: 8.5066%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Nº de ciudades (f<sub>i</sub>)</strong></td>
+<td style="width: 13.825%; background-color: #dedce0; text-align: center;"><strong>x<sub>i</sub>·f<sub>i</sub></strong></td>
+<td style="width: 12.6835%; background-color: #dedce0; text-align: center;"><strong>x<sub>i<sup>2</sup>·</sub>f<sub>i</sub></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">10</td>
+<td style="width: 8.5066%; height: 18px; text-align: center;">1</td>
+<td style="width: 13.825%; text-align: center;">10</td>
+<td style="width: 12.6835%; text-align: center;">100</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">12</td>
+<td style="width: 8.5066%; height: 18px; text-align: center;">4</td>
+<td style="width: 13.825%; text-align: center;">48</td>
+<td style="width: 12.6835%; text-align: center;">576</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">15</td>
+<td style="width: 8.5066%; height: 18px; text-align: center;">3</td>
+<td style="width: 13.825%; text-align: center;">45</td>
+<td style="width: 12.6835%; text-align: center;">675</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">20</td>
+<td style="width: 8.5066%; height: 18px; text-align: center;">7</td>
+<td style="width: 13.825%; text-align: center;">140</td>
+<td style="width: 12.6835%; text-align: center;">2800</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">25</td>
+<td style="width: 8.5066%; height: 18px; text-align: center;">5</td>
+<td style="width: 13.825%; text-align: center;">125</td>
+<td style="width: 12.6835%; text-align: center;">3125</td>
+</tr>
+<tr>
+<td style="width: 18.1261%; text-align: center;">N</td>
+<td style="width: 8.5066%; text-align: center;">20</td>
+<td style="width: 13.825%; text-align: center;">368</td>
+<td style="width: 12.6835%; text-align: center;">7276</td>
+</tr>
+</tbody>
+</table>
+<p>Calculamos en primer lugar la media aritmética.</p>
+<p><span class="exe-math show-image position-center"><span class="exe-math-img"><img alt="" src="eXe_LaTeX_math_4.gif" width="384" height="60" /></span><span class="exe-math-code">\displaystyle{\bar{x}=\frac{x_1\cdot f_1+x_2\cdot f_2+...+x_n\cdot f_n}{N}=\frac{ \sum_{i=1}^{3}x_{i}\cdot f_{i}}{N}=\frac{368}{20}=18,4}</span></span>Y ahora ya estamos en condiciones de calcular la varianza y la desviación típica:</p>
+<p>En primer lugar, la varianza, <img alt="" src="eXe_LaTeX_math_0.1.gif" width="304" height="60" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /></p>
+<p>y ahora, la desviación típica, <img alt="" src="eXe_LaTeX_math_1.1.gif" width="184" height="21" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /></p>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_escribe" id="id65">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Varianza y desviación típica en variables continuas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta65_114_2" class="block iDevice_content">
+<div class="exe-text"><p>El proceso de cálculo de la varianza y de la desviación típica en variables continuas es idéntico al que se sigue para las variables discretas, con la salvedad de que sustituiremos el valor x<sub>i</sub> por los valores de las marcas de clase (m<sub>i</sub>) de los intervalos, quedando las fórmulas como siguen:</p>
+<p><img alt="" src="eXe_LaTeX_math_2.2.gif" width="144" height="57" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" />    <img alt="" src="eXe_LaTeX_math_3.1.gif" width="168" height="59" style="font-size: 1.05em;" /></p>
+<p></p>
+<div class="exe-fx exe-tabs">
+<h2>Ejercicio resuelto</h2>
+<p>La siguiente tabla recoge los datos relativos a la edad de los agresores de las víctimas de violencia de género en España durante el año 2023. Calcula la desviación típica y la varianza.</p>
+<table border="1" style="width: 23.2308%; margin-left: auto; margin-right: auto; height: 148px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 18.1261%; background-color: #dedce0; height: 58px;"><strong>Edad de los agresores (x<sub>i</sub>)</strong></td>
+<td style="width: 6.8937%; background-color: #dedce0; height: 58px;"><strong>Nº de agresores (f<sub>i</sub>)</strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[21,31)</td>
+<td style="width: 6.8937%; height: 18px; text-align: center;">2</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[31,41)</td>
+<td style="width: 6.8937%; height: 18px; text-align: center;">10</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[41,51)</td>
+<td style="width: 6.8937%; height: 18px; text-align: center;">19</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[51,61)</td>
+<td style="width: 6.8937%; height: 18px; text-align: center;">8</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[61,71)</td>
+<td style="width: 6.8937%; height: 18px; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 18.1261%; text-align: center;">[71,81]</td>
+<td style="width: 6.8937%; text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<h2>Solución</h2>
+<p>En primer lugar añadiremos tres nuevas columnas en nuestra table, en primer lugar las marcas de clase de los intervalos (m<sub>i</sub>), en segundo lugar el producto de las marcas de clase por su frecuencia absoluta (m<sub>i</sub>·f<sub>i</sub>), y en tercer lugar, el producto del cuadrado de las marcas de clase por su frecuencia <span style="font-size: 14px;">(<span style="font-size: 12pt;">m<sub>i</sub><sup>2</sup>·f<sub>i</sub></span>)</span></p>
+<p><span style="font-size: 14px;"></span></p>
+<table border="1" style="width: 34.8438%; margin-left: auto; margin-right: auto; height: 184px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 11.1369%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Edad de los agresores (x<sub>i</sub>)</strong></td>
+<td style="width: 2.80169%; background-color: #dedce0; height: 58px; text-align: center;"><strong>Nº de agresores (f<sub>i</sub>)</strong></td>
+<td style="width: 6.42506%; background-color: #dedce0; text-align: center; height: 58px;"><strong>m<sub>i</sub></strong></td>
+<td style="width: 5.34979%; background-color: #dedce0; text-align: center; height: 58px;"><strong>x<sub>i</sub>·f<sub>i</sub></strong></td>
+<td style="width: 7.51942%; background-color: #dedce0; text-align: center; height: 58px;"><strong>x<sub>i</sub><sup>2</sup>·f<sub>i</sub></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; height: 18px; text-align: center;">[21,31)</td>
+<td style="width: 2.80169%; height: 18px; text-align: center;">2</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">26</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">52</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">1352</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; height: 18px; text-align: center;">[31,41)</td>
+<td style="width: 2.80169%; height: 18px; text-align: center;">10</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">36</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">360</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">12960</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; height: 18px; text-align: center;">[41,51)</td>
+<td style="width: 2.80169%; height: 18px; text-align: center;">19</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">46</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">874</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">40204</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; height: 18px; text-align: center;">[51,61)</td>
+<td style="width: 2.80169%; height: 18px; text-align: center;">8</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">56</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">448</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">25088</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; height: 18px; text-align: center;">[61,71)</td>
+<td style="width: 2.80169%; height: 18px; text-align: center;">4</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">66</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">264</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">17424</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; text-align: center; height: 18px;">[71,81]</td>
+<td style="width: 2.80169%; text-align: center; height: 18px;">6</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;">76</td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">456</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">34656</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 11.1369%; text-align: center; height: 18px;">N</td>
+<td style="width: 2.80169%; text-align: center; height: 18px;">49</td>
+<td style="width: 6.42506%; text-align: center; height: 18px;"></td>
+<td style="width: 5.34979%; text-align: center; height: 18px;">2454</td>
+<td style="width: 7.51942%; text-align: center; height: 18px;">131684</td>
+</tr>
+</tbody>
+</table>
+<p>Ahora calculamos en primer lugar la media aritmética.</p>
+<p></p>
+<p><img alt="" src="eXe_LaTeX_math_4.1.gif" width="216" height="60" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /> Esto significa que la edad media de los agresores es de 50,08 años.</p>
+<p>Ahora ya podemos calcular la varianza  y la desviación típica.</p>
+<div class="exe-math show-image position-center">
+<p class="exe-math-img"><img alt="" src="eXe_LaTeX_math_5.1.gif" width="336" height="60" /></p>
+<p class="exe-math-code">\displaystyle{\sigma^2 =\frac{\sum_{i=1}^{6}m_{i}^2\cdot f_{i}}{N}-\bar{x}^2=\frac{131684}{49}-50,08^2=179,42}</p>
+</div>
+<p>Y por tanto, la desviación típica es <img alt="" src="eXe_LaTeX_math_6.1.gif" width="200" height="21" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" />. Esto significa que la desviación típica es de 13,39 años.</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_escribe" id="id66">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Coeficiente de variación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta66_115_2" class="block iDevice_content">
+<div class="exe-text"><p>El coeficiente de variación es una medida de dispersión relativa (libre de unidades de me<span style="font-size: 1.05em;">dida), que se define como el cociente de la desviación estándar entre la media aritmética.</span></p>
+<p>En ocasiones, necesitamos comparar la variabilidad o dispersión de dos conjuntos de datos, sin embargo, al hacerlo, puede que ambos conjuntos estén expresados en diferentes unidades de medida (por ejemplo, uno en metros, otro en litros), por lo tanto, no se podrán comparar sus varianzas o desvia<span style="font-size: 1.05em;">ciones estándar. También puede darse el caso de que estén expresados en la misma unidad de medida, pero nos interesa determinar la variación respecto a una base. Para estos casos, se utiliza el coeficiente de variación.</span></p>
+<p>El coeficiente de variación se suele usar para comparar el grado de dispersión de dos o más conjuntos de datos; incluso si tienen medidas diferentes. Es de gran utilidad cuando se necesita comparar las dispersiones de dos conjuntos de datos cuyas medias son muy diferentes. De dos conjuntos de datos, el más homogéneo es el que tiene menor coeficiente de variación.</p>
+<p>Esta medida de dispersión fue propuesta por Karl Pearson (1895) para comparar la variabilidad o<span style="font-size: 1.05em;"> dispersión entre varias distribuciones de frecuencias.</span></p>
+<p>El coeficiente de variación se expresa como <img alt="" src="eXe_LaTeX_math_7.1.gif" width="64" height="23" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /></p>
+<div class="exe-fx exe-tabs">
+<h2>Ejemplo</h2>
+<p>Utilizaremos el ejercicio anterior donde calculamos la media y la desviación típica del estudio estadístico donde se analizaba la edad de los asesinos relacionados con la violencia de género que habían asesinado <span style="font-size: 1.05em;">a 49 mujeres durante el año 2022 en España.</span></p>
+<p>Recuerda que:</p>
+<p><img alt="" src="eXe_LaTeX_math_10.gif" width="416" height="60" style="font-size: 16.8px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px; padding: 20px; border-radius: 2px; text-align: center;" /></p>
+<p></p>
+<p></p>
+<h2></h2>
+<h2>Solución</h2>
+<div class="exe-math show-image position-center">
+<p class="exe-math-img"><img alt="" src="eXe_LaTeX_math_10.gif" width="416" height="60" /></p>
+<p class="exe-math-img">Por tanto, </p>
+<div class="exe-math show-image position-center">
+<p class="exe-math-img"><img alt="" src="eXe_LaTeX_math_12.gif" width="176" height="33" /> En términos porcentuales, esto significa que la variabilidad de los datos de esta distribución es del 26,7%.</p>
+<p class="exe-math-code">\displaystyle{CV=\frac{\sigma}{\bar{x}}=\frac{13,39}{50,08}=0,267}</p>
+</div>
+<p class="exe-math-code">\displaystyle{\bar{x}=\frac{ \sum_{i=1}^{6}m_{i}\cdot f_{i}}{N}=\frac{2454}{49}=50,08} \hspace{2cm}\displaystyle{\sigma=\sqrt{\sigma^2}=\sqrt{179,42}=13,39}</p>
+</div>
+<p><br /><br /></p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_escribe" id="id67">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Practica</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta67_116_2" class="block iDevice_content">
+<div class="exe-text"><p>La siguiente tabla recoge los datos relativos al número de sentencias que se dictaron en el mes de Diciembre de 2022 en los 73 juzgados de Andalucía con potestad para juzgar denuncias relativas a la violencia de género.</p>
+<table border="1" style="width: 30.5897%; margin-left: auto; margin-right: auto; height: 169px;">
+<tbody>
+<tr style="height: 58px;">
+<td style="width: 18.1261%; background-color: #dedce0; height: 58px; text-align: center;"><b>Nº de sentencias (I<sub>i</sub>)</b></td>
+<td style="width: 14.253%; background-color: #dedce0; height: 58px; text-align: center;"><b>Nº de juzgados (f<sub>i</sub>)</b></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[0,10)</td>
+<td style="width: 14.253%; height: 18px; text-align: center;">15</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[10,20)</td>
+<td style="width: 14.253%; height: 18px; text-align: center;">20</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[20,30)</td>
+<td style="width: 14.253%; height: 18px; text-align: center;">25</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[30,40)</td>
+<td style="width: 14.253%; height: 18px; text-align: center;">8</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 18.1261%; height: 18px; text-align: center;">[40,50)</td>
+<td style="width: 14.253%; height: 18px; text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<p>Calcula la varianza, la desviación típica y el coeficiente de variación, e interpreta la dispersión de los datos que pueda presentar esta distribución.</p>
+<p>Debes resolver el ejercicio en una hoja de cálculo de Google, y una vez que hayas realizado los cálculos, debes compartir esa hoja de cálculo en la tarea que habrá creado tu profesor en Google Classroom.</p>
+<p>Si tienes alguna duda de como realizar los cálculos, puedes consultar estos vídeos de Youtube.</p>
+<figure class="exe-figure exe-media position-center license-CC0" style="width: 560px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/VJKmTB9kcwM" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="author">José Navarro Sánchez</span>. <span class="title"><em>Varianza y desviación típica en distribuciones continuas</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<figure class="exe-figure exe-media position-center license-CC0" style="width: 560px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/qc5vmP62VSY" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="author">José Navarro Sánchez</span>. <span class="title"><em>Coeficiente de variación</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="62_p_centralizacin_variable_continua.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_la_estadstica_de_la_violencia_de_gnero.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
